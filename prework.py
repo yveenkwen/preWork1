@@ -15,3 +15,19 @@ def first_odds():
         print(i)
 
 first_odds()
+
+# Question 3 
+# Please write a Python function, max_num_in_list to return the max number of a given list. 
+# The first line of the code has been defined as below.
+
+def max_num_in_list(a_list):
+    
+    max  =  a_list[0]
+
+    for x in a_list:
+        if x > max :
+            max = x
+    return max
+
+a_list =[23, 45 , 2 , 43, 1, 7]
+print(max_num_in_list(a_list))
