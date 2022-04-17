@@ -45,3 +45,17 @@ def is_leap_year(a_year):
     return False
     
 print(is_leap_year(2045))
+
+
+# QUESTION 5
+# Write a function to check to see if all numbers in list are consecutive numbers. 
+# For example, [2,3,4,5,6,7] are consecutive numbers, but [1,2,4,5] are not consecutive numbers. 
+# The return should be boolean Type.
+
+    
+def is_consecutiv(a_list):
+    return sorted(a_list) == list(range(min(a_list), max(a_list)+1))
+      
+
+lst = [1,  3, 4, 2]
+print(is_consecutiv(lst))
